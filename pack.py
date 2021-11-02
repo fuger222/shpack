@@ -15,7 +15,7 @@ def encode_bytes(data):
 	for byte in data: encoded.append(hex(byte))
 	return ", ".join(encoded)
 
-print(f"[*] Reading shell script from {outfile}")
+print(f"[*] Reading shell script from {infile}")
 with open(infile, "rb") as file: data = file.read()
 
 print(f"[*] Reading C template from ./template.c")
